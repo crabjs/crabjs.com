@@ -1,0 +1,367 @@
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+body, html {
+    font: 18px/26px "Roboto", sans-serif;
+    font-weight: 300;
+    color: #393456
+}
+
+@media screen and (max-device-width: 414px) {
+    body, html {
+        font-size: 14px;
+        line-height: 20px
+    }
+}
+
+a {
+    color: #ff7d2e;
+    text-decoration: none
+}
+
+a:hover {
+    border-bottom: 4px solid #ff7d2e
+}
+
+.clear::after {
+    content: " ";
+    display: table;
+    clear: both
+}
+
+.name {
+    font-weight: 100
+}
+
+.ir {
+    color: transparent;
+    font: 0/0 serif
+}
+
+section, footer {
+    text-align: center
+}
+
+section > h1, footer > h1 {
+    font-size: 36px;
+    margin-bottom: 50px
+}
+
+@media screen and (max-device-width: 414px) {
+    section > h1, footer > h1 {
+        line-height: 30px;
+        font-size: 24px;
+        margin-bottom: 25px
+    }
+}
+
+body > section, body > footer {
+    padding: 100px 64px;
+    position: relative
+}
+
+body > section:nth-child(event), body > footer:nth-child(event) {
+    background-color: #fff
+}
+
+body > section:nth-child(odd), body > footer:nth-child(odd) {
+    background-color: #f4f4f4
+}
+
+@media screen and (max-device-width: 768px) {
+    body > section, body > footer {
+        padding: 50px 32px
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    body > section, body > footer {
+        padding: 25px 16px
+    }
+}
+
+section.jumbotron {
+    background: #403b61;
+    background: linear-gradient(135deg, #403b61 0%, #393456 70%, #383455 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#403b61', endColorstr='#383455', GradientType=1);
+    text-align: left;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden
+}
+
+section.jumbotron > h1 {
+    font-size: 72px;
+    letter-spacing: 15px;
+    color: #fff
+}
+
+section.jumbotron .tagline span {
+    color: #fff;
+    background-color: #111;
+    display: inline-block;
+    line-height: 56px;
+    padding: 0 35px 0 20px;
+    font-size: 24px;
+    font-weight: 100
+}
+
+section.jumbotron .tagline span::after {
+    content: "*";
+    color: #ff7d2e;
+    margin-left: 6px
+}
+
+section.jumbotron .note {
+    padding-left: 20px;
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 100
+}
+
+section.jumbotron .note::before {
+    content: "*";
+    color: #ff7d2e;
+    margin-right: 6px
+}
+
+section.jumbotron nav a {
+    display: inline-block;
+    width: auto;
+    color: #fff;
+    margin-top: 7px;
+    line-height: 40px;
+    padding: 0 35px 0 20px;
+    transition: padding-right .3s
+}
+
+section.jumbotron nav a:hover {
+    padding-right: 120px;
+    background-color: #ff7d2e;
+    color: #fff;
+    border-bottom: 0
+}
+
+section.jumbotron nav a.pink {
+    background: #ed1b72
+}
+
+section.jumbotron nav a.green {
+    background: #4eca48
+}
+
+section.jumbotron nav a.yellow {
+    background: #f2d40d;
+    color: #333
+}
+
+section.jumbotron nav a.white {
+    background: #fff;
+    color: #333
+}
+
+section.jumbotron nav a.blue {
+    background: #0191f7
+}
+
+section.jumbotron::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("/img/wolf-r.png") 700px bottom no-repeat;
+    background-size: 500px;
+    pointer-events: none
+}
+
+@media screen and (max-device-width: 1024px) {
+    section.jumbotron::before {
+        background-position: 450px bottom
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    section.jumbotron::before {
+        background-position: 300px bottom
+    }
+}
+
+@media screen and (max-device-width: 414px) {
+    section.jumbotron h1 {
+        line-height: 64px
+    }
+
+    section.jumbotron .tagline span {
+        font-size: 14px;
+        font-weight: 300
+    }
+
+    section.jumbotron .note {
+        font-size: 12px;
+        font-weight: 300
+    }
+
+    section.jumbotron nav a {
+        font-size: 13px
+    }
+
+    section.jumbotron::before {
+        display: none
+    }
+}
+
+section#intro .why {
+    margin-top: 40px;
+    font-size: 15px
+}
+
+section#intro .why img.logo {
+    margin-top: 30px
+}
+
+@media screen and (max-device-width: 414px) {
+    section#intro .why {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 20px
+    }
+}
+
+section#req section + section {
+    margin-top: 100px
+}
+
+section#req .server {
+    margin-bottom: 25px
+}
+
+section#req img {
+    max-width: 100%;
+    height: auto
+}
+
+section#req img.browsers {
+    margin: 25px 0
+}
+
+section#req del {
+    color: #a1a1a1
+}
+
+@media screen and (max-device-width: 414px) {
+    section#req section + section {
+        margin-top: 30px
+    }
+}
+
+section#install .console {
+    background-color: #393456;
+    width: 680px;
+    padding: 40px 35px;
+    margin: 50px auto;
+    font: 15px/25px Consolas, Monaco, monospace;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    overflow: hidden
+}
+
+section#install .console p::before {
+    content: '$';
+    margin-right: 14px;
+    opacity: .2
+}
+
+section#install .console .prog {
+    color: #ff7d2e
+}
+
+section#install .console .arg {
+    color: #70e4e5
+}
+
+section#install .console .cmd {
+    color: #f2d40d
+}
+
+section#install .console .cmt {
+    color: #4eca48
+}
+
+section#install .console::after {
+    content: " ";
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+    top: -41px;
+    right: -89px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    opacity: .4;
+    pointer-events: none
+}
+
+@media screen and (max-device-width: 414px) {
+    section#install .console {
+        margin: 24px 0;
+        padding: 20px 12px;
+        font-size: 12px;
+        line-height: 24px;
+        width: 100%;
+        overflow: auto
+    }
+
+    section#install .console p {
+        white-space: nowrap
+    }
+
+    section#install .console::after {
+        display: none
+    }
+}
+
+footer {
+    background: #393456 !important;
+    color: #fff;
+    font-size: 15px
+}
+
+footer a.keycdn, footer a.firebase {
+    margin: 12px 6px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+footer a.keycdn:hover, footer a.firebase:hover {
+    border-bottom: 0
+}
+
+footer a.firebase {
+    margin-top: 16px
+}
+
+@media screen and (max-device-width: 414px) {
+    footer {
+        font-size: 12px
+    }
+}
+
+@media screen and (max-device-width: 320px) {
+    footer a.keycdn {
+        margin-top: 0
+    }
+}
